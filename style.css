@@ -1,0 +1,60 @@
+/* GLOBAL TYPOGRAPHY */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.brand-font {
+    font-family: 'Playfair Display', serif;
+}
+
+/* UTILITIES */
+.text-shadow-md {
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* HIGH-END ANIMATIONS */
+/* Slow zoom effect for the hero image */
+.animate-slow-zoom {
+    animation: slowZoom 20s ease-in-out infinite alternate;
+}
+
+@keyframes slowZoom {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.05); }
+}
+
+/* Subtle fade-in for the main text */
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* --- SCROLL REVEAL ANIMATIONS --- */
+
+/* Start state for the left items (invisible & pushed left) */
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Start state for the right items (invisible & pushed right) */
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* When Javascript says they are on screen, snap them into place! */
+.slide-in-left.is-visible,
+.slide-in-right.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
