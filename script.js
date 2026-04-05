@@ -1,5 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // --- LOADING SCREEN LOGIC ---
+    window.addEventListener('load', () => {
+        const loadingScreen = document.getElementById('loadingScreen');
+        
+        // Wait 800 milliseconds so the user sees the logo
+        setTimeout(() => {
+            // Fade out
+            loadingScreen.classList.add('opacity-0');
+            
+            // Wait 1 second for fade to finish, then hide completely
+            setTimeout(() => {
+                loadingScreen.classList.add('hidden');
+                loadingScreen.classList.remove('flex');
+            }, 1000);
+            
+        }, 800);
+    });
+
     // --- COMPACT DROPDOWN MENU LOGIC ---
     const menuBtn = document.getElementById('menuToggleBtn');
     const compactMenu = document.getElementById('compactMenu');

@@ -1,3 +1,12 @@
+/* --- CUSTOM FONTS --- */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.brand-font {
+    font-family: 'Playfair Display', serif;
+}
+
 /* GLOBAL TYPOGRAPHY */
 body {
     font-family: 'Noto Sans JP', sans-serif;
