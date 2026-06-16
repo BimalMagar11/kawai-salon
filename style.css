@@ -1,69 +1,46 @@
-/* --- CUSTOM FONTS --- */
-body {
-    font-family: 'Noto Sans JP', sans-serif;
+/* --- GLOBAL STYLES --- */
+:root {
+    --accent: #e2a0a0; /* Dusty Rose from your sign */
 }
 
-.brand-font {
-    font-family: 'Playfair Display', serif;
-}
-
-/* GLOBAL TYPOGRAPHY */
 body {
     font-family: 'Noto Sans JP', sans-serif;
     scroll-behavior: smooth;
+    color: #27272a;
 }
 
 .brand-font {
     font-family: 'Playfair Display', serif;
 }
 
-/* UTILITIES */
-.text-shadow-md {
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-}
+.text-rose-400 { color: var(--accent); }
+.bg-rose-400 { background-color: var(--accent); }
 
-/* HIGH-END ANIMATIONS */
-/* Slow zoom effect for the hero image */
+/* --- ANIMATIONS --- */
 .animate-slow-zoom {
-    animation: slowZoom 20s ease-in-out infinite alternate;
+    animation: slowZoom 25s ease-in-out infinite alternate;
 }
-
 @keyframes slowZoom {
     0% { transform: scale(1); }
-    100% { transform: scale(1.05); }
+    100% { transform: scale(1.15); }
 }
 
-/* Subtle fade-in for the main text */
-.reveal {
+.reveal, .reveal-fade, .slide-in-left, .slide-in-right {
     opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1.5s ease-out forwards;
-    animation-delay: 0.3s;
+    transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-@keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-/* --- SCROLL REVEAL ANIMATIONS --- */
+.slide-in-left { transform: translateX(-50px); }
+.slide-in-right { transform: translateX(50px); }
+.reveal-fade { transform: translateY(40px); }
 
-/* Start state for the left items (invisible & pushed left) */
-.slide-in-left {
-    opacity: 0;
-    transform: translateX(-60px);
-    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+.is-visible {
+    opacity: 1 !important;
+    transform: translate(0) !important;
 }
 
-/* Start state for the right items (invisible & pushed right) */
-.slide-in-right {
-    opacity: 0;
-    transform: translateX(60px);
-    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* When Javascript says they are on screen, snap them into place! */
-.slide-in-left.is-visible,
-.slide-in-right.is-visible {
-    opacity: 1;
-    transform: translateX(0);
+header.sticky-active {
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
 }

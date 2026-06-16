@@ -3,32 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KAWAI 美容室 | Premium Hair Design</title>
+    <title>Hair Salon One Ness | 那覇市国場のプライベートサロン</title>
     
+    <!-- SEO / Google Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "HairSalon",
-      "name": "KAWAI 美容室",
-      "image": "https://your-domain.com/assets/images/hero-bg.jpg",
+      "name": "Hair Salon One Ness (ワンネス)",
+      "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1000",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Shop Street Address",
-        "addressLocality": "City Name",
-        "addressRegion": "Prefecture",
-        "postalCode": "000-0000",
+        "streetAddress": "国場1185-1 嘉数ビル102",
+        "addressLocality": "那覇市",
+        "addressRegion": "沖縄県",
+        "postalCode": "902-0075",
         "addressCountry": "JP"
       },
-      "url": "https://your-domain.com",
-      "telephone": "+81980000000",
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-          "opens": "10:00",
-          "closes": "20:00"
-        }
-      ]
+      "url": "https://beauty.hotpepper.jp/slnH000723511/",
+      "telephone": "098-917-5345"
     }
     </script>
 
@@ -37,281 +30,180 @@
     <link rel="stylesheet" href="style.css">
 </head> 
 <body class="bg-white text-zinc-800 antialiased">
+
+    <!-- Loading Screen -->
     <div id="loadingScreen" class="fixed inset-0 bg-white z-[100] flex items-center justify-center transition-opacity duration-1000">
-        <h1 class="brand-font text-3xl md:text-5xl tracking-widest text-zinc-800 lowercase animate-pulse">
-            kawai
-        </h1>
+        <h1 class="brand-font text-3xl tracking-widest text-zinc-800 lowercase animate-pulse">One Ness</h1>
     </div>
-    <header class="bg-white px-6 py-4 flex justify-between items-center z-50 sticky top-0 border-b border-zinc-100 transition-all duration-300">
-        
-        <a href="#" class="block relative z-[60]">
-            <img src="assets/logo/file.svg" class="h-10 md:h-14 w-auto object-contain">
+
+    <!-- Header -->
+    <header id="mainHeader" class="fixed w-full px-6 py-4 flex justify-between items-center z-50 transition-all duration-500">
+        <a href="#" class="relative z-[70] brand-font text-2xl font-semibold tracking-tighter text-zinc-800">
+            One Ness
         </a>
 
-        <div class="flex items-center gap-6 relative z-[60]">
-            
-            <span class="hidden lg:block text-[11px] text-zinc-400 tracking-widest font-light mr-2">
-                沖縄大学より徒歩1分。幸せをデザインする美容室へようこそ。
-            </span>
-            
-            <a href="tel:098-000-0000" class="hidden md:block bg-black text-white hover:bg-zinc-700 transition duration-300 px-8 py-3 text-xs tracking-[0.2em] uppercase text-center">
-                電話予約
+        <div class="flex items-center gap-6 relative z-[70]">
+            <a href="tel:098-917-5345" class="hidden md:block border border-zinc-800 px-6 py-2 text-[10px] tracking-widest uppercase hover:bg-zinc-800 hover:text-white transition-all">
+                Call: 098-917-5345
             </a>
-            
-            <div class="relative">
-                
-                <button id="menuToggleBtn" class="flex flex-col justify-center items-end w-10 h-10 gap-[6px] focus:outline-none group">
-                    <span class="block w-7 h-[1px] bg-zinc-800 transition-all duration-300 origin-center"></span>
-                    <span class="block w-5 h-[1px] bg-zinc-800 transition-all duration-300 group-hover:w-7"></span>
-                    <span class="block w-7 h-[1px] bg-zinc-800 transition-all duration-300 origin-center"></span>
-                </button>
-
-                <nav id="compactMenu" class="absolute top-full right-0 mt-6 w-56 bg-white border border-zinc-100 shadow-2xl opacity-0 hidden transform -translate-y-4 transition-all duration-300 py-2">
-                    <a href="#concept" class="menu-link block w-full text-left px-6 py-4 text-xs brand-font italic tracking-widest text-zinc-600 hover:bg-zinc-50 hover:text-black transition-colors lowercase">concept</a>
-                    <a href="#menu" class="menu-link block w-full text-left px-6 py-4 text-xs brand-font italic tracking-widest text-zinc-600 hover:bg-zinc-50 hover:text-black transition-colors lowercase">menu</a>
-                    <a href="#recommend" class="menu-link block w-full text-left px-6 py-4 text-xs brand-font italic tracking-widest text-zinc-600 hover:bg-zinc-50 hover:text-black transition-colors lowercase">recommend</a>
-                    <a href="#staff" class="menu-link block w-full text-left px-6 py-4 text-xs brand-font italic tracking-widest text-zinc-600 hover:bg-zinc-50 hover:text-black transition-colors lowercase">staff</a>
-                    <a href="#gallery" class="menu-link block w-full text-left px-6 py-4 text-xs brand-font italic tracking-widest text-zinc-600 hover:bg-zinc-50 hover:text-black transition-colors lowercase">gallery</a>
-                    <a href="#access" class="menu-link block w-full text-left px-6 py-4 text-xs brand-font italic tracking-widest text-zinc-600 hover:bg-zinc-50 hover:text-black transition-colors lowercase">access</a>
-                    
-                    <div class="md:hidden px-6 pt-4 pb-2 border-t border-zinc-100 mt-2">
-                         <a href="tel:098-000-0000" class="block w-full border border-zinc-800 text-zinc-800 text-center py-3 text-[10px] tracking-[0.2em] uppercase hover:bg-black hover:text-white transition">
-                            電話予約
-                        </a>
-                    </div>
-                </nav>
-                
-            </div>
+            <button id="menuToggleBtn" class="flex flex-col gap-1.5 items-end p-2 group">
+                <span class="w-8 h-[1px] bg-zinc-800 transition-all group-hover:w-5"></span>
+                <span class="w-5 h-[1px] bg-zinc-800 transition-all group-hover:w-8"></span>
+            </button>
         </div>
+
+        <!-- Fullscreen Menu -->
+        <nav id="compactMenu" class="fixed inset-0 bg-white translate-x-full transition-transform duration-500 flex flex-col justify-center items-center z-[60]">
+            <div class="flex flex-col items-center gap-8">
+                <a href="#concept" class="menu-link brand-font text-4xl italic">concept</a>
+                <a href="#menu" class="menu-link brand-font text-4xl italic">menu</a>
+                <a href="#access" class="menu-link brand-font text-4xl italic">access</a>
+                <a href="https://beauty.hotpepper.jp/slnH000723511/" class="menu-link text-xs tracking-widest uppercase border-b border-zinc-800 pb-1">Hot Pepper Beauty</a>
+            </div>
+        </nav>
     </header>
 
-    <section class="relative h-[75vh] w-full overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&q=80&w=2000" 
+    <!-- Hero Section -->
+    <section class="relative h-screen w-full overflow-hidden">
+        <!-- SUGGESTION: Replace this URL with a photo of your actual salon interior -->
+        <img src="https://images.unsplash.com/photo-1521590832167-7bfcfaa6362f?auto=format&fit=crop&q=80&w=2000" 
              class="absolute inset-0 w-full h-full object-cover animate-slow-zoom" alt="Salon Interior">
         
-        <div class="absolute inset-0 flex items-center justify-center z-10">
-            <h1 class="brand-font text-7xl md:text-9xl text-white text-shadow-md tracking-wide lowercase reveal">
-                KAWAI 美容室
+        <div class="absolute inset-0 flex flex-col items-center justify-center z-10 bg-black/10">
+            <h1 class="brand-font text-7xl md:text-9xl text-white text-shadow-md tracking-tight reveal">
+                One Ness
             </h1>
+            <p class="text-white tracking-[0.5em] text-xs mt-4 reveal uppercase">Since 2024</p>
         </div>
+    </section>
 
-        <div class="absolute bottom-0 w-full bg-white/80 backdrop-blur-md border-t border-white/50 z-20">
-            <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
-                <div class="flex flex-col md:flex-row md:items-center gap-2 md:gap-8">
-                    <span class="text-xs font-medium tracking-widest text-zinc-500">2026.03.29</span>
-                    <span class="text-sm text-zinc-800">新型コロナウイルス対策について</span>
+    <!-- Concept -->
+    <section id="concept" class="py-32 px-6 bg-white">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="w-full md:w-1/2 slide-in-left">
+                <!-- SUGGESTION: Use a photo of your staff or your salon's "One guest" chair -->
+                <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=800" 
+                     class="w-full aspect-[3/4] object-cover" alt="Private Salon Experience">
+            </div>
+            <div class="w-full md:w-1/2 slide-in-right">
+                <h2 class="brand-font text-4xl italic mb-2">concept</h2>
+                <p class="text-[10px] text-rose-400 tracking-[0.3em] uppercase mb-10">コンセプト</p>
+                <h3 class="text-xl md:text-2xl tracking-widest leading-relaxed mb-6">
+                    一人の時間を大切にする、<br>完全プライベート空間。
+                </h3>
+                <p class="text-sm text-zinc-500 leading-loose font-light">
+                    那覇市国場に誕生した「One Ness（ワンネス）」は、お客様一人ひとりと丁寧に向き合うマンツーマンサロンです。<br><br>
+                    周りの目を気にせず、リラックスした時間をお過ごしいただけます。丁寧なカウンセリングで、あなたの「なりたい」を形にします。<br><br>
+                    お子様連れも大歓迎です。家族で通える温かな場所として、皆様をお待ちしております。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section (Prices Updated) -->
+    <section id="menu" class="py-32 px-6 bg-zinc-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="brand-font text-4xl md:text-5xl italic">menu</h2>
+                <p class="text-[10px] text-rose-400 mt-4 tracking-[0.3em] uppercase">メニュー・料金</p>
+            </div>
+            
+            <div class="grid grid-cols-1 gap-y-10 reveal-fade">
+                <div class="flex justify-between border-b border-zinc-200 pb-4">
+                    <div>
+                        <h4 class="text-sm font-medium">カット (Cut)</h4>
+                        <p class="text-[10px] text-zinc-400 mt-1">一般・学生・お子様カット承ります</p>
+                    </div>
+                    <span class="text-sm">¥4,000</span>
                 </div>
-                <a href="#news" class="bg-black text-white px-10 py-3 text-xs tracking-widest hover:bg-zinc-800 transition">
-                    詳細を見る
+                <div class="flex justify-between border-b border-zinc-200 pb-4">
+                    <div>
+                        <h4 class="text-sm font-medium">カラー (Color)</h4>
+                        <p class="text-[10px] text-zinc-400 mt-1">リタッチ・フルカラー</p>
+                    </div>
+                    <span class="text-sm">¥5,500〜</span>
+                </div>
+                <div class="flex justify-between border-b border-zinc-200 pb-4">
+                    <div>
+                        <h4 class="text-sm font-medium">パーマ (Perm)</h4>
+                        <p class="text-[10px] text-zinc-400 mt-1">ニュアンスパーマ・デザインパーマ</p>
+                    </div>
+                    <span class="text-sm">¥8,000〜</span>
+                </div>
+                <div class="flex justify-between border-b border-zinc-200 pb-4">
+                    <div>
+                        <h4 class="text-sm font-medium">縮毛矯正 (Straightening)</h4>
+                        <p class="text-[10px] text-zinc-400 mt-1">髪質に合わせたダメージレスな施術</p>
+                    </div>
+                    <span class="text-sm">¥11,000〜</span>
+                </div>
+                <div class="flex justify-between border-b border-zinc-200 pb-4">
+                    <div>
+                        <h4 class="text-sm font-medium">トリートメント (Treatment)</h4>
+                        <p class="text-[10px] text-zinc-400 mt-1">クイックから集中ケアまで</p>
+                    </div>
+                    <span class="text-sm">¥2,000〜</span>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <a href="https://beauty.hotpepper.jp/slnH000723511/coupon/" class="inline-block bg-zinc-800 text-white px-12 py-4 text-xs tracking-widest hover:bg-rose-400 transition-colors">
+                    クーポン・予約詳細はこちら
                 </a>
             </div>
         </div>
     </section>
 
-    <main class="h-auto bg-white">
-        <section id="concept" class="py-32 px-6 bg-white overflow-hidden">
-            <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
-                
-                <div class="w-full md:w-1/2 slide-in-left">
-                    <img src="https://images.unsplash.com/photo-1521590832167-7bfcfaa6362f?auto=format&fit=crop&q=80&w=800" 
-                         class="w-full h-[500px] md:h-[600px] object-cover grayscale-[30%] shadow-sm" alt="Salon Concept">
-                </div>
-                
-                <div class="w-full md:w-1/2 slide-in-right">
-                    <h2 class="brand-font text-4xl md:text-5xl italic tracking-wider text-zinc-800 lowercase mb-4">concept</h2>
-                    <p class="text-[10px] text-zinc-400 tracking-[0.3em] uppercase mb-12">コンセプト</p>
-                    
-                    <h3 class="text-xl md:text-2xl text-zinc-800 tracking-widest leading-relaxed mb-8">
-                        髪を通じて、<br>あなたの日常に小さな幸せを。
-                    </h3>
-                    
-                    <p class="text-sm text-zinc-500 leading-loose font-light">
-                        私たちは、ただ髪を切るだけの場所ではありません。<br><br>
-                        お客様一人ひとりの骨格や髪質、ライフスタイルに寄り添い、魅力を最大限に引き出すデザインを提案します。<br><br>
-                        厳選されたオーガニック薬剤と、ダメージレスにこだわった施術で、サロン帰りの「きれい」が長く続くように。<br><br>
-                        沖縄大学から徒歩1分。<br>都会の喧騒を忘れる落ち着いたモダンな空間で、心も髪も満たされる特別な時間をお約束します。
-                    </p>
-                </div>
-
-            </div>
-        </section>
-        <section id="gallery" class="py-32 px-6 bg-zinc-50 overflow-hidden">
-            <div class="max-w-7xl mx-auto">
-                
-                <div class="text-center mb-20">
-                    <h2 class="brand-font text-4xl md:text-5xl italic tracking-wider text-zinc-800 lowercase">hair design</h2>
-                    <p class="text-[10px] text-zinc-400 mt-4 tracking-[0.3em] uppercase">スタイルギャラリー</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    
-                    <div class="group relative overflow-hidden cursor-pointer slide-in-left">
-                        <img src="https://images.unsplash.com/photo-1620331311520-246422fd82f9?auto=format&fit=crop&q=80&w=800" 
-                             class="w-full h-[500px] object-cover transition-transform duration-1000 group-hover:scale-105" alt="Short Bob">
-                        <div class="absolute bottom-0 left-0 w-full bg-white/95 backdrop-blur-sm p-8 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                            <h3 class="text-sm tracking-widest text-zinc-800 font-medium">ハンサムショート (Handsome Short)</h3>
-                            <p class="text-[10px] text-zinc-400 mt-2 tracking-widest uppercase">Cut / Color</p>
-                        </div>
-                    </div>
-
-                    <div class="group relative overflow-hidden cursor-pointer slide-in-right mt-0 md:mt-16">
-                        <img src="https://images.unsplash.com/photo-1595476108010-b4d1f10d5e43?auto=format&fit=crop&q=80&w=800" 
-                             class="w-full h-[500px] object-cover transition-transform duration-1000 group-hover:scale-105" alt="Medium Perm">
-                        <div class="absolute bottom-0 left-0 w-full bg-white/95 backdrop-blur-sm p-8 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                            <h3 class="text-sm tracking-widest text-zinc-800 font-medium">ニュアンスパーマ (Nuance Perm)</h3>
-                            <p class="text-[10px] text-zinc-400 mt-2 tracking-widest uppercase">Cut / Perm / Treatment</p>
-                        </div>
-                    </div>
-
-                    <div class="group relative overflow-hidden cursor-pointer slide-in-left">
-                        <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&q=80&w=800" 
-                             class="w-full h-[500px] object-cover transition-transform duration-1000 group-hover:scale-105" alt="Long Layer">
-                        <div class="absolute bottom-0 left-0 w-full bg-white/95 backdrop-blur-sm p-8 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                            <h3 class="text-sm tracking-widest text-zinc-800 font-medium">シースルーロング (See-through Long)</h3>
-                            <p class="text-[10px] text-zinc-400 mt-2 tracking-widest uppercase">Cut / Color / Spa</p>
-                        </div>
-                    </div>
-
-                    <div class="group relative overflow-hidden cursor-pointer slide-in-right mt-0 md:mt-16">
-                        <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&q=80&w=800" 
-                             class="w-full h-[500px] object-cover transition-transform duration-1000 group-hover:scale-105" alt="Highlight Color">
-                        <div class="absolute bottom-0 left-0 w-full bg-white/95 backdrop-blur-sm p-8 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                            <h3 class="text-sm tracking-widest text-zinc-800 font-medium">ハイライトカラー (Highlight Color)</h3>
-                            <p class="text-[10px] text-zinc-400 mt-2 tracking-widest uppercase">Double Color / Treatment</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <section id="staff" class="py-32 px-6 bg-white border-t border-zinc-100 overflow-hidden">
-            <div class="max-w-5xl mx-auto">
-                
-                <div class="text-center mb-20">
-                    <h2 class="brand-font text-4xl md:text-5xl italic tracking-wider text-zinc-800 lowercase reveal-fade">staff</h2>
-                    <p class="text-[10px] text-zinc-400 mt-4 tracking-[0.3em] uppercase reveal-fade">スタイリスト</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-8">
-                    
-                    <div class="reveal-fade flex flex-col items-center text-center">
-                        <div class="overflow-hidden mb-8">
-                            <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&q=80&w=600" 
-                                 class="w-64 h-80 object-cover grayscale-[20%] hover:scale-105 transition-transform duration-700" alt="Owner KAWAI">
-                        </div>
-                        <h3 class="text-lg tracking-widest text-zinc-800 mb-1">KAWAI</h3>
-                        <p class="text-[10px] text-zinc-400 tracking-widest mb-6 uppercase">Owner / Art Director</p>
-                        <p class="text-xs text-zinc-500 leading-loose font-light w-full max-w-sm px-4">
-                            都内有名店で10年勤務後、独立。ショート・ボブの似合わせカットと、透明感のあるカラーが得意です。髪のお悩み、何でもご相談ください。
-                        </p>
-                    </div>
-
-                    <div class="reveal-fade flex flex-col items-center text-center md:mt-16">
-                        <div class="overflow-hidden mb-8">
-                            <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&q=80&w=600" 
-                                 class="w-64 h-80 object-cover grayscale-[20%] hover:scale-105 transition-transform duration-700" alt="Stylist SATO">
-                        </div>
-                        <h3 class="text-lg tracking-widest text-zinc-800 mb-1">SATO</h3>
-                        <p class="text-[10px] text-zinc-400 tracking-widest mb-6 uppercase">Top Stylist</p>
-                        <p class="text-xs text-zinc-500 leading-loose font-light w-full max-w-sm px-4">
-                            トレンドを取り入れたニュアンスパーマや、柔らかい質感のスタイル作りが得意です。リラックスできる空間作りを心がけています。
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <section id="access" class="py-32 px-6 bg-zinc-50 border-t border-zinc-100 overflow-hidden">
-            <div class="max-w-6xl mx-auto">
-                
-                <div class="text-center mb-20">
-                    <h2 class="brand-font text-4xl md:text-5xl italic tracking-wider text-zinc-800 lowercase reveal-fade">access</h2>
-                    <p class="text-[10px] text-zinc-400 mt-4 tracking-[0.3em] uppercase reveal-fade">アクセス・店舗情報</p>
-                </div>
-
-                <div class="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
-                    
-                    <div class="w-full lg:w-1/2 slide-in-left">
-                        <div class="w-full h-[450px] bg-zinc-200 grayscale contrast-125 shadow-lg">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.628551608985!2d127.6970723150293!3d26.20875398343586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e56ba23101eb69%3A0xc6222b46c6ec2d!2sOkinawa%20University!5e0!3m2!1sen!2sjp!4v1680000000000!5m2!1sen!2sjp" 
-                                width="100%" 
-                                height="100%" 
-                                style="border:0;" 
-                                allowfullscreen="" 
-                                loading="lazy" 
-                                referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        </div>
-                    </div>
-
-                    <div class="w-full lg:w-1/2 slide-in-right">
-                        
-                        <div class="mb-10 pb-10 border-b border-zinc-200">
-                            <h3 class="text-lg text-zinc-800 tracking-widest mb-4 font-medium">ダメージレスにこだわる、大人のための空間。</h3>
-                            <p class="text-xs text-zinc-500 leading-relaxed tracking-wider font-light">
-                                弱酸性の薬剤と100％オーガニックのアイテムを使用。<br>
-                                徹底的に、長く続くきれいを追求します。<br>
-                                透明感のあるモダンな店内で、<br>
-                                心安らぐ時間をお過ごしください。
-                            </p>
-                        </div>
-
-                        <dl class="space-y-6">
-                            <div class="flex flex-col md:flex-row border-b border-zinc-100 pb-4">
-                                <dt class="w-32 text-xs tracking-[0.2em] text-zinc-400 uppercase mb-2 md:mb-0">Shop Name</dt>
-                                <dd class="text-sm text-zinc-800 tracking-widest font-medium">KAWAI 美容室</dd>
-                            </div>
-                            <div class="flex flex-col md:flex-row border-b border-zinc-100 pb-4">
-                                <dt class="w-32 text-xs tracking-[0.2em] text-zinc-400 uppercase mb-2 md:mb-0">Address</dt>
-                                <dd class="text-sm text-zinc-800 tracking-widest font-light">
-                                    〒902-0000<br>
-                                    沖縄県那覇市国場000-0<br>
-                                    <span class="text-xs text-zinc-500 mt-2 inline-block">沖縄大学より徒歩1分</span>
-                                </dd>
-                            </div>
-                            <div class="flex flex-col md:flex-row border-b border-zinc-100 pb-4">
-                                <dt class="w-32 text-xs tracking-[0.2em] text-zinc-400 uppercase mb-2 md:mb-0">Open</dt>
-                                <dd class="text-sm text-zinc-800 tracking-widest font-light">
-                                    10:00 - 19:00<br>
-                                    <span class="text-[10px] text-zinc-400 mt-1 inline-block">定休日：日曜日・月曜日</span>
-                                </dd>
-                            </div>
-                            <div class="flex flex-col md:flex-row pb-4">
-                                <dt class="w-32 text-xs tracking-[0.2em] text-zinc-400 uppercase mb-2 md:mb-0">Parking</dt>
-                                <dd class="text-sm text-zinc-800 tracking-widest font-light">店舗前に専用駐車場3台完備</dd>
-                            </div>
-                        </dl>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-  
-    <footer class="py-16 bg-white border-t border-zinc-100">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col items-center">
-            
-            <div class="flex gap-8 mb-8">
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-pink-600 transition-colors duration-300" aria-label="Instagram">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
-                </a>
-                
-                <a href="https://line.me" target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-green-500 transition-colors duration-300" aria-label="LINE">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.4 10.2C22.4 5.7 17.7 2 12 2S1.6 5.7 1.6 10.2c0 4 3.7 7.4 8.7 8.1.4.1.9.3 1 .7.1.3 0 .8-.1 1.2 0 0-.1.5-.2 1.1 0 .2-.1.5.2.7.4.2.8 0 1.2-.2 1.6-1.1 8.5-5.9 9.8-9 0-.1.2-.4.2-2.6zM9.5 13.1H7c-.2 0-.3-.1-.3-.3V8.4c0-.2.1-.3.3-.3h.5c.2 0 .3.1.3.3v4h1.7c.2 0 .3.1.3.3v.1c0 .2-.1.3-.3.3zm2.5 0h-.5c-.2 0-.3-.1-.3-.3V8.4c0-.2.1-.3.3-.3h.5c.2 0 .3.1.3.3v4.4c0 .2-.1.3-.3.3zm4.5 0h-.5c-.1 0-.2 0-.2-.1l-2.2-3v2.8c0 .2-.1.3-.3.3h-.5c-.2 0-.3-.1-.3-.3V8.4c0-.2.1-.3.3-.3h.4c.1 0 .2 0 .2.1l2.2 3V8.4c0-.2.1-.3.3-.3h.5c.2 0 .3.1.3.3v4.4c0 .2-.1.3-.3.3zm3.7-3.6h-1.6v1.1h1.6c.2 0 .3.1.3.3v.1c0 .2-.1.3-.3.3h-1.6v1.1h1.6c.2 0 .3.1.3.3v.1c0 .2-.1.3-.3.3h-2.1c-.2 0-.3-.1-.3-.3V8.4c0-.2.1-.3.3-.3h2.1c.2 0 .3.1.3.3v.1c0 .2-.1.3-.3.3z"/></svg>
-                </a>
-
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-blue-600 transition-colors duration-300" aria-label="Facebook">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-                </a>
+    <!-- Access Section -->
+    <section id="access" class="py-32 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="brand-font text-4xl italic">access</h2>
+                <p class="text-[10px] text-rose-400 mt-4 tracking-[0.3em] uppercase">アクセス</p>
             </div>
 
-            <p class="text-[10px] tracking-widest text-zinc-400 uppercase font-light">
-                &copy; <span id="currentYear"></span> KAWAI 美容室. All Rights Reserved.
-            </p>
+            <div class="flex flex-col lg:flex-row gap-16">
+                <div class="w-full lg:w-1/2 h-[450px] slide-in-left grayscale">
+                    <!-- Correct Map for Kokuba One Ness -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.628551608985!2d127.6970723150293!3d26.20875398343586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e56ba25983791d%3A0x7d06e89791444005!2z44CSOTAyLTAwNzUg5rKW57iE55yM6YKj6KaH5biC5Zu95aC077yR77yR77yY77yV4oiS77ke!5e0!3m2!1sja!2sjp!4v1700000000000" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="w-full lg:w-1/2 slide-in-right">
+                    <dl class="space-y-8">
+                        <div>
+                            <dt class="text-[10px] text-rose-400 tracking-widest uppercase mb-2">Address</dt>
+                            <dd class="text-sm tracking-widest">
+                                〒902-0075 沖縄県那覇市国場1185-1 嘉数ビル102<br>
+                                <span class="text-xs text-zinc-400">沖縄大学より徒歩1分 / 店舗前駐車場完備</span>
+                            </dd>
+                        </div>
+                        <div>
+                            <dt class="text-[10px] text-rose-400 tracking-widest uppercase mb-2">Hours</dt>
+                            <dd class="text-sm tracking-widest">10:00 - 19:00</dd>
+                        </div>
+                        <div>
+                            <dt class="text-[10px] text-rose-400 tracking-widest uppercase mb-2">Closed</dt>
+                            <dd class="text-sm tracking-widest">不定休 (Hot Pepperをご確認ください)</dd>
+                        </div>
+                        <div>
+                            <dt class="text-[10px] text-rose-400 tracking-widest uppercase mb-2">Contact</dt>
+                            <dd class="text-lg tracking-widest font-medium">098-917-5345</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 border-t border-zinc-100 text-center">
+        <h2 class="brand-font text-3xl mb-8">One Ness</h2>
+        <p class="text-[10px] tracking-widest text-zinc-400 uppercase">
+            &copy; <span id="currentYear"></span> Hair Salon One Ness.
+        </p>
     </footer>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
