@@ -13,6 +13,126 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
+.logo-link {
+    display: block;
+    width: 142px;
+}
+
+.logo-mark-header {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(1rem, 2.5vw, 2.5rem);
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+
+.main-nav::-webkit-scrollbar {
+    display: none;
+}
+
+.main-nav-link {
+    color: #27272a;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    transition: color 0.25s ease;
+}
+
+.main-nav-link:hover {
+    color: var(--accent);
+}
+
+.menu-section-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.75rem;
+    border-bottom: 1px solid #e4e4e7;
+    padding-bottom: 1rem;
+}
+
+.menu-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.menu-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 1.25rem;
+    border-bottom: 1px solid #e4e4e7;
+    padding-bottom: 1rem;
+}
+
+.menu-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.65rem;
+}
+
+.menu-tag {
+    border: 1px solid rgba(226, 160, 160, 0.55);
+    color: #9f6f6f;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    line-height: 1;
+    padding: 0.35rem 0.5rem;
+    text-transform: uppercase;
+}
+
+.menu-item-title {
+    color: #27272a;
+    font-size: 0.92rem;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.menu-item-description {
+    color: #71717a;
+    font-size: 0.72rem;
+    line-height: 1.9;
+    margin-top: 0.35rem;
+}
+
+.menu-item-meta {
+    color: #a1a1aa;
+    font-size: 0.64rem;
+    line-height: 1.7;
+    margin-top: 0.45rem;
+}
+
+.menu-item-price {
+    color: #27272a;
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.access-map-panel {
+    min-height: 450px;
+    border: 1px solid #e4e4e7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(2rem, 5vw, 4rem);
+}
+
+.salon-data-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
 .text-rose-400 { color: var(--accent); }
 .bg-rose-400 { background-color: var(--accent); }
 
@@ -40,7 +160,30 @@ body {
 }
 
 header.sticky-active {
-    background: rgba(255,255,255,0.85);
-    backdrop-filter: blur(10px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+}
+
+#mainHeader {
+    background: #fff;
+    box-shadow: 0 1px 0 rgba(39, 39, 42, 0.06);
+}
+
+@media (max-width: 767px) {
+    .logo-link {
+        width: 118px;
+    }
+
+    #mainHeader {
+        padding-inline: 1rem;
+    }
+
+    .menu-section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .menu-item {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
 }

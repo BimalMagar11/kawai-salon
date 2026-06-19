@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-
     // 1. Loading Screen
     window.addEventListener('load', () => {
         setTimeout(() => {
@@ -19,23 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 3. Menu Toggle
-    const menuBtn = document.getElementById('menuToggleBtn');
-    const menu = document.getElementById('compactMenu');
-    let isOpen = false;
-
-    const toggleMenu = () => {
-        isOpen = !isOpen;
-        menu.classList.toggle('translate-x-full');
-        document.body.style.overflow = isOpen ? 'hidden' : '';
-    };
-
-    menuBtn.addEventListener('click', toggleMenu);
-    document.querySelectorAll('.menu-link').forEach(link => {
-        link.addEventListener('click', toggleMenu);
-    });
-
-    // 4. Scroll Reveal
+    // 3. Scroll Reveal
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
